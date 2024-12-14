@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz for Biology Students</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Registration Page -->
+  <div id="registration">
+    <h1>Welcome to the Biology Quiz</h1>
+    <label for="studentName">Enter Your Name:</label>
+    <input type="text" id="studentName">
+    <button onclick="register()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Page -->
+  <div id="quiz" style="display: none;">
+    <div id="overall-timer">Total Time: <span id="totalTime">0</span> seconds</div>
+    <div id="question-container">
+      <h2 id="questionText"></h2>
+      <div id="options"></div>
+    </div>
+    <div id="timer">Time Remaining: <span id="timeLeft">10</span> seconds</div>
+  </div>
+
+  <!-- Result Page -->
+  <div id="result" style="display: none;">
+    <h2>Quiz Results</h2>
+    <p id="score"></p>
+    <div id="leaderboard">
+      <h3>Leaderboard</h3>
+      <ul id="leaderboard-list"></ul>
+    </div>
+    <button onclick="window.location.reload()">Restart Quiz</button>
+  </div>
+
+  <audio id="challengeSound" src="challenge.mp3"></audio>
+  <audio id="timeoutSound" src="timeout.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

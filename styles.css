@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#registration,
+#quiz,
+#result {
+  padding: 20px;
+}
+
+#timer {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+#overall-timer {
+  margin-bottom: 20px;
+}
+
+#options button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#options button:hover {
+  background-color: #45a049;
+}
+
+#leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+#leaderboard-list li {
+  margin: 5px 0;
+}
+
+#leaderboard-list .highest-score {
+  color: green;
+  font-weight: bold;
+}
+
+#leaderboard-list .fastest-time {
+  color: blue;
+  font-weight: bold;
+}
